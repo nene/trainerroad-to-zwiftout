@@ -1,12 +1,12 @@
 {
-  "name": "trainerroad-import",
+  "name": "trainerroad-to-zwiftout",
   "version": "1.0.0",
   "description": "Converts TrainerRoad workout JSON into Zwiftout workout format.",
-  "main": "parse-tr-workout.ts",
+  "main": "trainerroad-to-zwiftout.ts",
   "author": "Rene Saarsoo <nene@triin.net>",
   "license": "MIT",
   "scripts": {
-    "test": "ts-node parse-tr-workout.ts < test-workout.json"
+    "test": "ts-node trainerroad-to-zwiftout.ts < test-workout.json"
   },
   "dependencies": {
     "@types/node": "^17.0.23",
