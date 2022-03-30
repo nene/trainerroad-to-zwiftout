@@ -26,6 +26,12 @@ function stripTags(html: string): string {
     return html.replace(/<\/?\w+>/g, "");
 }
 
+function formatDuration(seconds: number): string {
+    const ss = String(seconds % 60).padStart(2, "0");
+    const mm = String(Math.floor(seconds / 60)).padStart(2, "0");
+    return `${mm}:${ss}`;
+}
+
 console.log(`Name: ${json.Workout.Details.WorkoutName}`);
 console.log(`Author: TrainerRoad`);
 console.log(`Description: ${stripTags(json.Workout.Details.WorkoutDescription)}`);
@@ -35,18 +41,18 @@ intervals.forEach((interval) => {
     if (interval.Name === "Workout") {
         return;
     }
-    const duration = (interval.End - interval.Start) / 60;
+    const duration = formatDuration(interval.End - interval.Start);
     const [startPower, almostEndPower] = getPowerRange(interval.Start, interval.End - 1);
     const type = startPower <= 50 && almostEndPower <= 50 ? "Rest" : "Interval";
 
     if (startPower === almostEndPower) {
-        console.log(`${type}: ${duration}:00 ${startPower}%`);
+        console.log(`${type}: ${duration} ${startPower}%`);
     } else {
         const [startPower, endPower] = getPowerRange(interval.Start, interval.End);
         if (Math.abs(endPower - almostEndPower) < 1) {
-            console.log(`${type}: ${duration}:00 ${startPower}%..${endPower}%`);
+            console.log(`${type}: ${duration} ${startPower}%..${endPower}%`);
         } else {
-            console.log(`${type}: ${duration}:00 ${startPower}%..${Math.round(almostEndPower)}%`);
+            console.log(`${type}: ${duration} ${startPower}%..${Math.round(almostEndPower)}%`);
         }
     }
 });
