@@ -5,7 +5,7 @@
   "author": "Rene Saarsoo <nene@triin.net>",
   "license": "MIT",
   "scripts": {
-    "test": "ts-node parse-tr-workout.ts < tr-workout.json"
+    "test": "ts-node parse-tr-workout.ts < test-workout.json"
   },
   "dependencies": {
     "@types/node": "^17.0.23"
