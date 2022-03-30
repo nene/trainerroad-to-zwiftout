@@ -1,4 +1,6 @@
-import json from "./tr-workout.json";
+import fs from 'fs';
+
+var json = JSON.parse(fs.readFileSync(0, 'utf-8'));
 
 const timeData = json.Workout.workoutData;
 const intervals = json.Workout.intervalData;
