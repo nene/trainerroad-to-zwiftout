@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "parse-tr-workout.ts",
   "author": "Rene Saarsoo <nene@triin.net>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^17.0.23"
+  }
 }
