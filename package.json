@@ -8,6 +8,6 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "test": "node test.js"
+    "test": "cat test-workout.json | node ./bin/cli.js | cmp test-output.txt"
   }
 }

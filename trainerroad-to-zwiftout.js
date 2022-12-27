@@ -70,5 +70,5 @@ export default function trainerroadToZwiftout(workout) {
         }
     });
 
-    return result.join("\n") + "\n";
+    return result.join("\n");
 }
