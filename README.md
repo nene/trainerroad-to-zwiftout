@@ -2,6 +2,12 @@
 
 Converts TrainerRoad workout in JSON format to [Zwiftout](https://github.com/nene/zwiftout) format.
 
+## Install
+
+```sh
+npm install trainerroad-to-zwiftout
+```
+
 ## Usage as a library
 
 ```js
