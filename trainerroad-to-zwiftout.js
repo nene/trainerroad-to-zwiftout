@@ -1,6 +1,6 @@
-export default function trainerroadToZwiftout(json) {
-    const timeData = json.Workout.workoutData;
-    const intervals = json.Workout.intervalData;
+export default function trainerroadToZwiftout(workout) {
+    const timeData = workout.workoutData;
+    const intervals = workout.intervalData;
 
     function getPowerRange(start, end) {
         const startMs = start * 1000;
@@ -30,10 +30,10 @@ export default function trainerroadToZwiftout(json) {
     }
 
     const result = [];
-    result.push(`Name: ${json.Workout.Details.WorkoutName}`);
+    result.push(`Name: ${workout.Details.WorkoutName}`);
     result.push(`Author: TrainerRoad`);
     result.push(
-        `Description: ${stripTags(json.Workout.Details.WorkoutDescription)}`
+        `Description: ${stripTags(workout.Details.WorkoutDescription)}`
     );
     result.push("");
 
