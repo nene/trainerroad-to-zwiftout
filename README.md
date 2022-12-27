@@ -1,4 +1,4 @@
-# Trainerroad to Zwiftout
+# TrainerRoad to Zwiftout
 
 Converts TrainerRoad workout in JSON format to [Zwiftout](https://github.com/nene/zwiftout) format.
 
