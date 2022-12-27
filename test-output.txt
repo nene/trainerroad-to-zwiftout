@@ -1,0 +1,14 @@
+Name: Bald Knob
+Author: TrainerRoad
+Description: Bald Knob is 60 minutes of aerobic Endurance riding spent between 65-70% FTP.Optional form drills include some Endurance Spinning, some Single-Leg Focus &amp; some Kick &amp; Pull form work.
+
+Rest: 02:30 50%
+Interval: 02:30 55%
+Interval: 02:30 60%
+Interval: 02:30 65%
+Interval: 15:00 70%
+Interval: 01:00 70%..65%
+Interval: 14:00 65%
+Interval: 01:00 65%..70%
+Interval: 14:00 70%
+Interval: 05:00 70%..50%

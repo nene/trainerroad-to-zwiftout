@@ -8,6 +8,6 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "test": "ts-node trainerroad-to-zwiftout.ts < test-workout.json"
+    "test": "node test.js"
   }
 }
